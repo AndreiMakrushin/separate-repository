@@ -3,9 +3,9 @@ eBtn.style="display: none;"
 //------------------------------------------------------------
 
 const btn = document.getElementById('btn');
+const text = document.getElementById('text');
+const square = document.getElementById('square');
 btn.addEventListener('click', function(){
-    const text = document.getElementById('text');
-    const square = document.getElementById('square');
     square.style.background = `${text.value}`;
     text.value = ''
 });
